@@ -1,0 +1,4 @@
+[deps]
+GeometryBasics = "5c1252a2-5f33-56bf-86c9-59e7332b4326"
+RadeonProRender = "27029320-176d-4a42-b57d-56729d2ad457"
+RadeonProRender_jll = "e92fa02b-1b7a-5e4e-a5cb-14fe26dfc45b"
