@@ -3,9 +3,14 @@
 Download + install julia:
 https://julialang.org/downloads/
 
-julia-1.10-beta4: https://julialang-s3.julialang.org/bin/winnt/x64/1.9/julia-1.9.0-beta4-win64.exe
+Not working julia versions:
 
-Actually works on julia-1.6.7: https://julialang-s3.julialang.org/bin/winnt/x64/1.6/julia-1.6.7-win64.exe
+julia-1.9-beta4: https://julialang-s3.julialang.org/bin/winnt/x64/1.9/julia-1.9.0-beta4-win64.exe
+julia-1.8.5:     https://julialang-s3.julialang.org/bin/winnt/x64/1.8/julia-1.8.5-win64.zip
+
+Working julia versions:
+
+julia-1.6.7: https://julialang-s3.julialang.org/bin/winnt/x64/1.6/julia-1.6.7-win64.exe
 
 ```sh
 $ git clone https://github.com/SimonDanisch/RPRMWE.jl.git RPRMWE
