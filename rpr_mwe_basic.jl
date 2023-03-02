@@ -80,9 +80,9 @@ function rprContextCreateMesh(context, vertices, num_vertices, vertex_stride, no
                               vidx_stride, normal_indices, nidx_stride, texcoord_indices, tidx_stride,
                               num_face_vertices, num_faces, out_mesh)
     return check_error(ccall((:rprContextCreateMesh, librprp64), Int32,
-                             (rpr_context, Ptr{Float32}, Cint, Cint, Ptr{Float32}, Cint, Cint,
-                              Ptr{Float32}, Cint, Cint, Ptr{Cint}, Cint, Ptr{Cint}, Cint,
-                              Ptr{Cint}, Cint, Ptr{Cint}, Cint, Ptr{rpr_shape}), context, vertices,
+                             (rpr_context, Ptr{Float32}, Csize_t, Cint, Ptr{Float32}, Csize_t, Cint,
+                              Ptr{Float32}, Csize_t, Cint, Ptr{Cint}, Cint, Ptr{Cint}, Cint,
+                              Ptr{Cint}, Cint, Ptr{Cint}, Csize_t, Ptr{rpr_shape}), context, vertices,
                              num_vertices, vertex_stride, normals, num_normals, normal_stride, texcoords,
                              num_texcoords, texcoord_stride, vertex_indices, vidx_stride, normal_indices,
                              nidx_stride, texcoord_indices, tidx_stride, num_face_vertices, num_faces,
@@ -133,3 +133,4 @@ uvraw = Float32[1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 0.0, 1.0,
 iraw = Cint[0, 1, 2, 0, 2, 3, 4, 5, 6, 4, 6, 7, 8, 9, 10, 8, 10, 11, 12, 13, 14, 12, 14, 15, 16, 17, 18,
                 16, 18, 19, 20, 21, 22, 20, 22, 23]
 shape(context, v, n, iraw, uvraw)
+println("TEST")
