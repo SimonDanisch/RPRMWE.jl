@@ -10,7 +10,7 @@ Actually works on julia-1.6.7: https://julialang-s3.julialang.org/bin/winnt/x64/
 ```sh
 $ git clone https://github.com/SimonDanisch/RPRMWE.jl.git RPRMWE
 $ cd RPRMWE
-$ julia --project=. 'using Pkg; Pkg.instantiate()'
+$ julia --project=. -e 'using Pkg; Pkg.instantiate()'
 $ julia --project=. rpr_mwe.jl
 $ julia --project=. rpr_mwe_basic.jl
 ```
